@@ -1,5 +1,5 @@
 build:
-    web:
+    test-dev-env:
       context: .
       dockerfile: Dockerfile
       secrets:
@@ -8,4 +8,4 @@ deploy:
   compose: 
     file: docker-compose.yml
     services:
-    - web
+    - test

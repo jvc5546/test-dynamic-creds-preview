@@ -1,5 +1,5 @@
 services:
-  web:
+  test:
     # Define the web service using a pre-built image specified by the environment variable
     image: $OKTETO_BUILD_WEB_IMAGE
     ports:
