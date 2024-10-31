@@ -3,4 +3,4 @@ deploy:
   - name: Datestamp file generator
     command: date +%Y-%m-%d_%H:%M:%S > secrets/mysecret.txt
   - name: Deploy compose
-    command: okteto deploy -f okteto.yml
+    command: okteto deploy -f okteto.yml -l debug
