@@ -1,6 +1,6 @@
 
 deploy:
   - name: File generator
-    command: echo Hello > secrets/mysecret.txt
+    command: date +%Y-%m-%d_%H:%M:%S > secrets/mysecret.txt
   - name: Deploy compose
     command: okteto deploy -f okteto.yml
